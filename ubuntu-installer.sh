@@ -7,6 +7,7 @@ if ! dpkg -s $pkgs >/dev/null 2>&1; then
   sudo apt-get install -y $pkgs
 fi
 #Docker
+#Uninstall old versions
 pkgs='docker docker-engine docker.io containerd runc'
 if ! dpkg -s $pkgs >/dev/null 2>&1; then
   sudo apt-get remove -y $pkgs
