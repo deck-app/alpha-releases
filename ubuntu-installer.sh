@@ -58,7 +58,6 @@ sudo curl -L "https://github.com/docker/compose/releases/download/$compose/docke
 sudo chmod +x /usr/local/bin/docker-compose
 fi
 fi
-sudo rm -rf override.conf
 sudo setcap 'cap_net_bind_service=+eip' /opt/DECK/deck
 sudo sh -c "echo '/opt/DECK/' >> /etc/ld.so.conf.d/deck.conf"
 sudo ldconfig
